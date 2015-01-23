@@ -11,7 +11,7 @@ namespace Random
         private int a;
         private int c;
         private int m;
-        private int currentVal = 0;
+        private long currentVal = 0;
 
         public LinCong(int a = -1, int c = -1, int m = -1, int seed = 0)
         {
@@ -31,7 +31,7 @@ namespace Random
             }
             
         }
-        public int nextValue(int maxValue = -1)
+        public long nextValue(int maxValue = -1)
         {
             currentVal = (a * currentVal + c) % m;
             

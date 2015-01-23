@@ -13,7 +13,7 @@ namespace Random
         private int b;
         private int c;
         private int m = int.MaxValue;
-        private int[] a;
+        private long[] a;
         private int currentVal = 0;
         private int j;
 
@@ -33,7 +33,7 @@ namespace Random
             }
 
             //populate array with a linear congruential
-            a = new int[k];
+            a = new long[this.k];
             a[0] = seed;
             LinCong lingen = new LinCong();
             for (int i = 1; i < a.Length; i++)
@@ -48,7 +48,7 @@ namespace Random
             // else, already initialized at member declaration
             j = 0;
         }
-        public int nextValue(int maxValue = -1)
+        public long nextValue(int maxValue = -1)
         {
             j = (j + 1) % k;
 
