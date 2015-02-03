@@ -13,3 +13,6 @@ C:\Users\winhac\Documents\GitHub\rand1\Random\Random\bin\Debug\Random.pdb
 C:\Users\winhac\Documents\GitHub\rand1\Random\Random\bin\Debug\Random.exe.CodeAnalysisLog.xml
 C:\Users\winhac\Documents\GitHub\rand1\Random\Random\bin\Debug\Random.exe.lastcodeanalysissucceeded
 C:\Users\winhac\Documents\GitHub\rand1\Random\Random\obj\Debug\Random.csprojResolveAssemblyReference.cache
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe.config
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\obj\Debug\Random.exe
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\obj\Debug\Random.pdb

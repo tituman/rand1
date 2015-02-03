@@ -10,6 +10,7 @@ namespace Random
     {
         static void Main(string[] args)
         {
+            //declare three different generators
             //LinCong linearCongruentialGenerator = new LinCong(a: 7, c: 0, m: 227, seed: 42);
             LinCong linearCongruentialGenerator = new LinCong();
             AddCong additiveCongruentialGenerator = new AddCong();
