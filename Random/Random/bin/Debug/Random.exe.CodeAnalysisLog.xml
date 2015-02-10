@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="12.0">
  <Targets>
-  <Target Name="C:\Users\winhac\Documents\GitHub\rand1\Random\Random\bin\Debug\Random.exe">
+  <Target Name="D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe">
    <Modules>
     <Module Name="random.exe">
      <Namespaces>
@@ -12,7 +12,7 @@
          <Members>
           <Member Name="#currentVal" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-02-03 09:18:17Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'AddCong.currentVal' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
@@ -23,34 +23,8 @@
          <Members>
           <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
-             <Issue Certainty="95" Level="Warning" Path="c:\Users\winhac\Documents\GitHub\rand1\Random\Random" File="Program.cs" Line="12">Parameter 'args' of 'Program.Main(string[])' is never used. Remove the parameter or use it in the method body.</Issue>
-            </Message>
-           </Messages>
-          </Member>
-         </Members>
-        </Type>
-        <Type Name="RandomGen" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
-         <Messages>
-          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
-           <Issue Certainty="75" Level="Warning">'RandomGen' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
-          </Message>
-         </Messages>
-         <Members>
-          <Member Name="#.ctor(Random.TypeGen,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
-           <Messages>
-            <Message Id="N" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
-             <Issue Certainty="95" Level="Warning" Path="c:\Users\winhac\Documents\GitHub\rand1\Random\Random" File="RandomGen.cs" Line="29">Parameter 'N' of 'RandomGen.RandomGen(TypeGen, int, int, int, int, int)' is never used. Remove the parameter or use it in the method body.</Issue>
-            </Message>
-            <Message Id="seed" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
-             <Issue Certainty="95" Level="Warning" Path="c:\Users\winhac\Documents\GitHub\rand1\Random\Random" File="RandomGen.cs" Line="29">Parameter 'seed' of 'RandomGen.RandomGen(TypeGen, int, int, int, int, int)' is never used. Remove the parameter or use it in the method body.</Issue>
-            </Message>
-           </Messages>
-          </Member>
-          <Member Name="#nextValue(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
-           <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2015-01-23 10:21:39Z" FixCategory="NonBreaking">
-             <Issue Certainty="95" Level="Warning" Path="c:\Users\winhac\Documents\GitHub\rand1\Random\Random" File="RandomGen.cs" Line="78">The 'this' parameter (or 'Me' in Visual Basic) of 'RandomGen.nextValue(int)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2015-02-03 09:18:17Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="d:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random" File="Program.cs" Line="12">Parameter 'args' of 'Program.Main(string[])' is never used. Remove the parameter or use it in the method body.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -64,16 +38,6 @@
   </Target>
  </Targets>
  <Rules>
-  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
-   <Name>Avoid uninstantiated internal classes</Name>
-   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
-   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182265.aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="12.0.0.0" />
-  </Rule>
   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
    <Name>Avoid unused private fields</Name>
    <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
@@ -82,16 +46,6 @@
    <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="12.0.0.0" />
-  </Rule>
-  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
-   <Name>Mark members as static</Name>
-   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
-   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="95">Warning</MessageLevel>
    <File Name="performancerules.dll" Version="12.0.0.0" />
   </Rule>
   <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">

@@ -13,7 +13,7 @@ namespace Random
         private int m;
         private long currentVal = 0;
 
-        public LinCong(int a = -1, int c = -1, int m = -1, int seed = 0)
+        public LinCong(int a = -1, int c = -1, int m = -1, int seed = 1)
         {
             if (a >= 0 && c >= 0 && m > 0)
             {
@@ -24,10 +24,12 @@ namespace Random
             }
             else
             {
-                this.a = 16807;
-                this.c = 0;
-                this.m = int.MaxValue;
-                this.currentVal = 42;
+                // starting numbers from
+                // http://www.cs.princeton.edu/courses/archive/spring03/cs126/assignments/cycle.html
+                this.a = 11; //16807;
+                this.c = 37; //0;
+                this.m = 100; //int.MaxValue;
+                this.currentVal = 1;
             }
             
         }

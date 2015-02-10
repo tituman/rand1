@@ -16,3 +16,8 @@ C:\Users\winhac\Documents\GitHub\rand1\Random\Random\obj\Debug\Random.csprojReso
 D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe.config
 D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\obj\Debug\Random.exe
 D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\obj\Debug\Random.pdb
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.pdb
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe.CodeAnalysisLog.xml
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\bin\Debug\Random.exe.lastcodeanalysissucceeded
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\Random\obj\Debug\Random.csprojResolveAssemblyReference.cache

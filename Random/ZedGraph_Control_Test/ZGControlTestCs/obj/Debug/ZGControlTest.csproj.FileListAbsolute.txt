@@ -1,0 +1,8 @@
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\bin\Debug\WindowsApplication2.exe
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\bin\Debug\WindowsApplication2.pdb
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\bin\Debug\ZedGraph.dll
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\obj\Debug\ZGControlTest.csprojResolveAssemblyReference.cache
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\obj\Debug\WindowsApplication2.Form1.resources
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\obj\Debug\ZGControlTest.csproj.GenerateResource.Cache
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\obj\Debug\WindowsApplication2.exe
+D:\Users\pnd\Eigene Dateien\GitHub\rand1\Random\ZedGraph_Control_Test\ZGControlTestCs\obj\Debug\WindowsApplication2.pdb

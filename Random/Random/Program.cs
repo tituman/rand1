@@ -16,8 +16,16 @@ namespace Random
             AddCong additiveCongruentialGenerator = new AddCong();
             VonNeumann vonNeumannGenerator = new VonNeumann();
 
+            Console.WriteLine("how many iterations?");
             int times = 0;
             while (!Int32.TryParse(Console.ReadLine(), out times) || times < 2)
+            {
+                Console.WriteLine("try again");
+            } 
+            
+            Console.WriteLine("max  number?");
+            int max = 0;
+            while (!Int32.TryParse(Console.ReadLine(), out max))
             {
                 Console.WriteLine("try again");
             }
@@ -29,8 +37,8 @@ namespace Random
 
             for(int i = 0; i <= times; i++)
             {
-                Console.Write("{0,15} ", linearCongruentialGenerator.nextValue(10));
-                Console.Write("{0,15} ", additiveCongruentialGenerator.nextValue(10));
+                Console.Write("{0,15} ", linearCongruentialGenerator.nextValue(max));
+                Console.Write("{0,15} ", additiveCongruentialGenerator.nextValue(max));
                 Console.WriteLine("{0,15} ", vonNeumannGenerator.nextValue());
             }
 
